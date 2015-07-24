@@ -1,0 +1,144 @@
+---
+6805:
+  description: Telefonica
+  import: AS6805
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.91
+    - 80.249.208.199
+    - 2001:7f8:1::a500:6805:1
+    - 2001:7f8:1::a500:6805:2
+
+46489:
+  description: Twitch
+  import: AS46489
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.210.197
+    - 80.249.211.27
+
+714:
+  description: Apple
+  import: AS714
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.211.160
+    - 80.249.211.183
+    - 2001:7f8:1::a500:714:1
+    - 2001:7f8:1::a500:714:2
+
+12414:
+  description: Solcon
+  import: AS12414
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.165
+    - 80.249.209.165
+    - 2001:7f8:1::a501:2414:1
+    - 2001:7f8:1::a501:2414:2
+
+20940:
+  description: Akamai
+  import: AS20940
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.168
+    - 80.249.209.208
+    - 2001:7f8:1::a502:940:1
+    - 2001:7f8:1::a502:940:2
+
+16298:
+  description: Interbox
+  import: AS16298
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.183
+    - 2001:7f8:1::a501:6298:1
+
+20562:
+  description: OpenPeering
+  import: AS20562
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.189
+    - 80.249.209.197
+    - 2001:7f8:1::a502:562:1
+    - 2001:7f8:1::a502:562:2
+
+12041:
+  description: Afilias
+  import: AS12041
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.190
+    - 2001:7f8:1::a501:2041:1
+
+21478:
+  description: Plex
+  import: AS21478
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.216
+
+15133:
+  description: EdgeCast
+  import: AS15133
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.209.162
+    - 2001:7f8:1::a501:5133:1
+
+41692:
+  description: OpenCarrier
+  import: AS41692
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.209.221
+    - 2001:7f8:1::a504:1692:1
+
+51752:
+  description: Wachttoren
+  import: AS51752
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.210.105
+    - 2001:7f8:1::a505:1752:1
+
+60937:
+  description: Businesstorg
+  import: AS60937
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.210.181
+
+36944:
+  description: Ubuntunet
+  import: AS36944
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.210.204
+    - 2001:7f8:1::a503:6944:1
+
+42473:
+  description: Anexia
+  import: AS42473
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.211.58
+    - 2001:7f8:1::a504:2473:1
+
+197692:
+  description: Conostix
+  import: AS197692
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.211.67
+    - 2001:7f8:1:0:a500:19:7692:1
+
+13335:
+  description: Cloudfare
+  import: AS13335
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.211.140
+    - 2001:7f8:1::a501:3335:1
