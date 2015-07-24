@@ -1,0 +1,103 @@
+---
+9036:
+  description: Neuronnexion
+  import: AS9036
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.111
+
+35189:
+  description: Association Kazar
+  import: AS35189
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.120
+    - 2001:7f8:4e:2::120
+
+29608:
+  description: Absolight
+  import: AS29608
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.121
+
+34019:
+  description: Association Hivane
+  import: AS34019
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.123
+    - 2001:7f8:4e:2::123
+
+28855:
+  description: Galacsys
+  import: AS28855
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.137
+    - 2001:7f8:4e:2::137
+
+7500:
+  description: M-Root
+  import: AS7500
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.148
+
+42937:
+  description: 720degres
+  import: AS42937
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.166
+
+50620:
+  description: Bluenetwork
+  import: AS50620
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.175
+
+13193:
+  description: Nerim
+  import: AS13193
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.181
+
+2484:
+  description: Afnic
+  import: AS2484
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.193
+    - 2001:7f8:4e:2::193
+
+8784:
+  description: Mgn
+  import: AS8784
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.196
+
+6730:
+  description: Sunrise
+  import: AS6730
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.213
+
+2486:
+  description: Afnic
+  import: AS2486
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.238
+    - 2001:7f8:4e:2::238
+
+9003:
+  description: Altitude Telecom
+  import: AS9003
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.246
