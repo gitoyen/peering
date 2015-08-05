@@ -1,0 +1,4 @@
+remarks:
+remarks:    # {{ description }}
+export:     to AS{{ neighbor_as }} announce {{ export }}
+import:     from AS{{ neighbor_as }} action pref=100; accept {{ import }}
