@@ -19,3 +19,9 @@
 * http://irrd.net/
 * https://github.com/daenney/napalm
 * https://github.com/daenney/netmiko
+
+# Generate
+
+    $ generate_config_ripe.py > gitoyen-peers
+    => and merge gitoyen-peers with AS20766 file (peering section)
+    => send the resulting file to auto-dbm
