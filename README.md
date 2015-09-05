@@ -10,3 +10,12 @@
 * https://sreeninet.wordpress.com/2014/09/28/network-device-configuration-using-templates-with-jinja2-and-yaml/
 * http://jedelman.com/home/ansible-for-networking/
 * rtconfig
+* http://irrtoolset.isc.org/
+* http://www.linux.it/~md/text/rpsltool-trex.pdf
+* https://github.com/job/rpsltool
+* https://github.com/job/peeringmatcher
+* http://irrexplorer.nlnog.net/search/20766
+* https://github.com/RIPE-NCC/peertools
+* http://irrd.net/
+* https://github.com/daenney/napalm
+* https://github.com/daenney/netmiko
