@@ -1,14 +1,14 @@
 ---
 9036:
   description: Neuronnexion
-  import: AS9036
+  import: AS-NEURONNEXION
   export: AS-GITOYEN
   peerings:
     - 194.68.129.111
 
 35189:
   description: Association Kazar
-  import: AS35189
+  import: AS-KAZAAR
   export: AS-GITOYEN
   peerings:
     - 194.68.129.120
@@ -16,14 +16,14 @@
 
 29608:
   description: Absolight
-  import: AS29608
+  import: AS-ABSOLIGHT
   export: AS-GITOYEN
   peerings:
     - 194.68.129.121
 
 34019:
   description: Association Hivane
-  import: AS34019
+  import: AS-HIVANE
   export: AS-GITOYEN
   peerings:
     - 194.68.129.123
@@ -31,7 +31,7 @@
 
 28855:
   description: Galacsys
-  import: AS28855
+  import: AS-GALACSYS
   export: AS-GITOYEN
   peerings:
     - 194.68.129.137
@@ -75,14 +75,14 @@
 
 8784:
   description: Mgn
-  import: AS8784
+  import: AS-MGN
   export: AS-GITOYEN
   peerings:
     - 194.68.129.196
 
 6730:
   description: Sunrise
-  import: AS6730
+  import: AS-GLOBAL
   export: AS-GITOYEN
   peerings:
     - 194.68.129.213

@@ -1,7 +1,7 @@
 ---
 6939:
   description: Huricane Electric
-  import: AS6939
+  import: AS-HURRICANE
   export: AS-GITOYEN
   limit_ipv4: 100000
   limit_ipv6: 50000
@@ -11,7 +11,7 @@
 
 20562:
   description: OpenPeering Europe
-  import: AS20562
+  import: AS-OPENPEERING
   export: AS-GITOYEN
   peerings:
     - 37.49.236.68
@@ -19,7 +19,7 @@
 
 34019:
   description: Hivane
-  import: AS34019
+  import: AS-HIVANE
   export: AS-GITOYEN
   peerings:
     - 37.49.236.71
@@ -27,7 +27,7 @@
 
 42473:
   description: Anexia
-  import: AS42473
+  import: AS-ANEXIA
   export: AS-GITOYEN
   peerings:
     - 37.49.236.85

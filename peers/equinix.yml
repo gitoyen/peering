@@ -1,7 +1,7 @@
 ---
 6939:
   description: Huricane Electric
-  import: AS6939
+  import: AS-HURRICANE
   export: AS-GITOYEN
   limit_ipv4: 106000
   limit_ipv6: 26000

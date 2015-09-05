@@ -1,7 +1,7 @@
 ---
 6805:
   description: Telefonica
-  import: AS6805
+  import: AS-TDDE
   export: AS-GITOYEN
   peerings:
     - 80.249.208.91
@@ -29,7 +29,7 @@
 
 12414:
   description: Solcon
-  import: AS12414
+  import: AS-SOLCON
   export: AS-GITOYEN
   peerings:
     - 80.249.208.165
@@ -39,7 +39,7 @@
 
 20940:
   description: Akamai
-  import: AS20940
+  import: AS-AKAMAI
   export: AS-GITOYEN
   peerings:
     - 80.249.208.168
@@ -49,7 +49,7 @@
 
 16298:
   description: Interbox
-  import: AS16298
+  import: AS-INTERBOX
   export: AS-GITOYEN
   peerings:
     - 80.249.208.183
@@ -57,7 +57,7 @@
 
 20562:
   description: OpenPeering
-  import: AS20562
+  import: AS-OPENPEERING
   export: AS-GITOYEN
   peerings:
     - 80.249.208.189
@@ -75,7 +75,7 @@
 
 21478:
   description: Plex
-  import: AS21478
+  import: AS-PLEX
   export: AS-GITOYEN
   peerings:
     - 80.249.208.216
@@ -90,7 +90,7 @@
 
 41692:
   description: OpenCarrier
-  import: AS41692
+  import: AS-OPENCARRIER
   export: AS-GITOYEN
   peerings:
     - 80.249.209.221
@@ -121,7 +121,7 @@
 
 42473:
   description: Anexia
-  import: AS42473
+  import: AS-ANEXIA
   export: AS-GITOYEN
   peerings:
     - 80.249.211.58
