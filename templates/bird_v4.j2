@@ -1,7 +1,7 @@
 protocol bgp {{ ix_name }}_{{ neighbor_as }} from tpl_{{ ix_name }}_peers {
     neighbor {{ neighbor_ipv4 }} as {{ neighbor_as }};
     description "{{ ix_name }} / {{ description }}";
-    {% if limit_ipv4 %}
+    {%- if limit_ipv4 %}
     import limit {{ limit_ipv4 }};
-    {% endif %}
+    {%- endif %}
 }

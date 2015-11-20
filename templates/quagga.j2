@@ -3,14 +3,13 @@ router bgp 20766
 neighbor {{ neighbor_ipv4 }} remote-as {{ neighbor_as }}
 neighbor {{ neighbor_ipv4 }} peer-group {{ ix_name }}_FIXME
 neighbor {{ neighbor_ipv4 }} description "====== {{ description }}"
-{% if limit_ipv4 %}
+{%- if limit_ipv4 %}
 neighbor {{ neighbor_ipv4 }} maximum-prefix {{ limit_ipv4 }}
-{% endif %}
-#
+{%- endif %}
 neighbor {{ neighbor_ipv6 }} remote-as {{ neighbor_as }}
 neighbor {{ neighbor_ipv6 }} description "====== {{ description }}"
 address-family ipv6
 neighbor {{ neighbor_ipv6 }} peer-group {{ ix_name }}_FIXME
-{% if limit_ipv6 %}
+{%- if limit_ipv6 %}
 neighbor {{ neighbor_ipv6 }} maximum-prefix {{ limit_ipv6 }}
-{% endif %}
+{%- endif %}
