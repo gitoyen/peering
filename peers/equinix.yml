@@ -50,3 +50,13 @@
   peerings:
     - 195.42.144.219
     - 2001:7f8:43::4:3142:1
+
+49463:
+  description: AS-LNCSA
+  import: AS49463
+  export: AS-GITOYEN
+  limit_ipv4: 50
+  limit_ipv6: 25
+  peerings:
+    - 195.42.145.115
+    - 2001:7f8:43::4:9463:1
