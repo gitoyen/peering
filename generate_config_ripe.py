@@ -47,5 +47,9 @@ def parse_peers(peer_file):
                 peerings[asn]['description'], export_as = peerings[asn]['export'],
                 import_as = peerings[asn]['import'])
 
+sys.stdout.write(open('templates/AS20766.pre', 'r').read())
+
 for peer_files in glob.glob('peers/*.yml'):
     parse_peers(peer_files)
+
+sys.stdout.write(open('templates/AS20766.post', 'r').read())
