@@ -1,4 +1,14 @@
 ---
+1200:
+  description: AMS-IX-MON
+  import: AS1200
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.1
+    - 80.249.209.1
+    - 2001:7f8:1::a500:1200:1
+    - 2001:7f8:1::a500:1200:2
+
 6805:
   description: Telefonica
   import: AS-TDDE
