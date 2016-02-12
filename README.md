@@ -22,6 +22,4 @@
 
 # Generate
 
-    $ generate_config_ripe.py > gitoyen-peers
-    => and merge gitoyen-peers with AS20766 file (peering section)
-    => send the resulting file to auto-dbm
+    $ ./generate_config_ripe.py|gpg2 --clearsign --no-verbose --batch --output - --textmode|EMAIL=noc_at_gitoyen.net mutt -s as20766 auto-dbm_at_ripe.net
