@@ -60,3 +60,13 @@
   peerings:
     - 195.42.145.115
     - 2001:7f8:43::4:9463:1
+
+16276:
+  description: AS-OVH
+  import: AS16276
+  export: AS-GITOYEN
+  limit_ipv4: 200
+  limit_ipv6: 200
+  peerings:
+    - 195.42.144.186
+    - 2001:7F8:43::1:6276:1
