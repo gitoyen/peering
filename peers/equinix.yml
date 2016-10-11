@@ -70,3 +70,23 @@
   peerings:
     - 195.42.144.186
     - 2001:7F8:43::1:6276:1
+
+4651:
+  description: CAT Telecom THIX
+  import: AS4651
+  export: AS-GITOYEN
+  limit_ipv4: 5000
+  limit_ipv6: 1000
+  peerings:
+    - 195.42.144.36
+    - 2001:7f8:43::4651:1
+
+200780:
+  description: APPLIWAVE
+  import: AS200780
+  export: AS-GITOYEN
+  limit_ipv4: 25
+  limit_ipv6: 25
+  peerings:
+    - 195.42.145.110
+    - 2001:7f8:43::20:780:1
