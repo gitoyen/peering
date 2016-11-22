@@ -116,13 +116,6 @@
     - 80.249.210.105
     - 2001:7f8:1::a505:1752:1
 
-60937:
-  description: Businesstorg
-  import: AS60937
-  export: AS-GITOYEN
-  peerings:
-    - 80.249.210.181
-
 36944:
   description: Ubuntunet
   import: AS36944
