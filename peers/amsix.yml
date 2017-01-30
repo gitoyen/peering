@@ -132,14 +132,6 @@
     - 80.249.211.58
     - 2001:7f8:1::a504:2473:1
 
-197692:
-  description: Conostix
-  import: AS197692
-  export: AS-GITOYEN
-  peerings:
-    - 80.249.211.67
-    - 2001:7f8:1:0:a500:19:7692:1
-
 13335:
   description: Cloudfare
   import: AS13335
