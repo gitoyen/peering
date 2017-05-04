@@ -1,4 +1,14 @@
 ---
+6777:
+  description: AMS-IX Route Servers
+  import: AS6777
+  export: AS-GITOYEN
+  peerings:
+    - 80.249.208.255
+    - 80.249.209.0
+    - 2001:7f8:1::a500:6777:1
+    - 2001:7f8:1::a500:6777:2
+
 1200:
   description: AMS-IX-MON
   import: AS1200

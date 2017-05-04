@@ -1,4 +1,11 @@
 ---
+1304:
+  description: SFINX Route Servers
+  import: AS1304
+  export: AS-GITOYEN
+  peerings:
+    - 194.68.129.100
+
 9036:
   description: Neuronnexion
   import: AS-NEURONNEXION

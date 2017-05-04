@@ -1,4 +1,14 @@
 ---
+24115:
+  description: EquinIX Route Servers
+  import: AS24115
+  export: AS-GITOYEN
+  peerings:
+    - 195.42.144.98
+    - 195.42.144.99
+    - 2001:7f8:43:0:ffff:ffff:ffff:1
+    - 2001:7f8:43:0:ffff:ffff:ffff:2
+
 6939:
   description: Huricane Electric
   import: AS-HURRICANE
