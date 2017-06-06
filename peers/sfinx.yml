@@ -13,14 +13,6 @@
   peerings:
     - 194.68.129.111
 
-35189:
-  description: Association Kazar
-  import: AS-KAZAAR
-  export: AS-GITOYEN
-  peerings:
-    - 194.68.129.120
-    - 2001:7f8:4e:2::120
-
 29608:
   description: Absolight
   import: AS-ABSOLIGHT
@@ -50,13 +42,6 @@
   export: AS-GITOYEN
   peerings:
     - 194.68.129.148
-
-42937:
-  description: 720degres
-  import: AS42937
-  export: AS-GITOYEN
-  peerings:
-    - 194.68.129.166
 
 50620:
   description: Bluenetwork
@@ -101,10 +86,3 @@
   peerings:
     - 194.68.129.238
     - 2001:7f8:4e:2::238
-
-9003:
-  description: Altitude Telecom
-  import: AS9003
-  export: AS-GITOYEN
-  peerings:
-    - 194.68.129.246
