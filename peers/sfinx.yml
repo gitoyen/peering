@@ -28,14 +28,6 @@
     - 194.68.129.123
     - 2001:7f8:4e:2::123
 
-28855:
-  description: Galacsys
-  import: AS-GALACSYS
-  export: AS-GITOYEN
-  peerings:
-    - 194.68.129.137
-    - 2001:7f8:4e:2::137
-
 7500:
   description: M-Root
   import: AS7500
