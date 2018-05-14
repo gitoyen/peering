@@ -20,6 +20,10 @@
 * https://github.com/daenney/napalm
 * https://github.com/daenney/netmiko
 
+* https://github.com/manuelkasper/AS-Stats
+* https://abuse.io/
+* https://github.com/respawner/peering-manager
+
 # Generate
 
     $ ./generate_config_ripe.py|gpg2 --clearsign --no-verbose --batch --output - --textmode|EMAIL=noc_at_gitoyen.net mutt -s as20766 auto-dbm_at_ripe.net
