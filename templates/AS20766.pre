@@ -21,5 +21,9 @@ remarks:    -
 remarks:    # Absolight
 import:     from AS29608 action pref=90; accept AS-ABSOLIGHT
 export:     to AS29608 announce ANY
+remarks:    -
+remarks:    # Hopus
+import:     from AS44530 action pref=100; accept AS-HOPUS
+export:     to AS44530 announce AS-GITOYEN
 remarks:
 remarks:    ======== Peering ========

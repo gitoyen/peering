@@ -23,6 +23,8 @@
 * https://github.com/manuelkasper/AS-Stats
 * https://abuse.io/
 * https://github.com/respawner/peering-manager
+* https://www.ixpdb.net/en/ixpdb/participant/20766/providers/
+* https://github.com/respawner/looking-glass
 
 # Generate
 

@@ -2,7 +2,6 @@ remarks:
 remarks:    =========================
 admin-c:    GI1036-RIPE
 tech-c:     GI1036-RIPE
-remarks:    For information on "status:" attribute read https://www.ripe.net/data-tools/db/faq/faq-status-values-legacy-resources
 status:     ASSIGNED
 mnt-by:     RIPE-NCC-END-MNT
 notify:     noc@gitoyen.net
