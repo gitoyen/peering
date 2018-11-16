@@ -1,0 +1,174 @@
+714:
+  description: Apple Inc.
+  export: AS-GITOYEN
+  import: AS-APPLE
+  limit_ipv4: 10000
+  limit_ipv6: 1000
+  peerings:
+  - 195.42.145.190
+  - 2001:7f8:43::714:2
+  - 195.42.145.189
+  - 2001:7f8:43::714:1
+3856:
+  description: Packet Clearing House
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 195.42.144.18
+  - 2001:7f8:43::3856:1
+4651:
+  description: CAT Telecom AS4651
+  export: AS-GITOYEN
+  import: AS-THIX
+  limit_ipv4: 6000
+  limit_ipv6: 1200
+  peerings:
+  - 195.42.144.36
+  - 2001:7f8:43::4651:1
+6507:
+  description: Riot Games
+  export: AS-GITOYEN
+  import: AS-RIOT
+  limit_ipv4: 50
+  limit_ipv6: 3
+  peerings:
+  - 195.42.145.86
+6939:
+  description: Hurricane Electric
+  export: AS-GITOYEN
+  import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
+  limit_ipv4: 165000
+  limit_ipv6: 36000
+  peerings:
+  - 195.42.144.104
+  - 2001:7f8:43::6939:1
+7500:
+  description: M-ROOT DNS Server
+  export: AS-GITOYEN
+  import: AS-M-ROOT
+  limit_ipv4: 6
+  limit_ipv6: 2
+  peerings:
+  - 195.42.144.79
+  - 2001:7f8:43::7500:1
+8784:
+  description: Prosodie Cap Gemini
+  export: AS-GITOYEN
+  import: AS-MGN
+  limit_ipv4: 22
+  limit_ipv6: 1
+  peerings:
+  - 195.42.144.81
+  - 2001:7f8:43::8784:1
+12041:
+  description: Afilias
+  export: AS-GITOYEN
+  import: AS12041:AS-AFILIAS
+  limit_ipv4: 200
+  limit_ipv6: 200
+  peerings:
+  - 195.42.144.112
+  - 2001:7f8:43::1:2041:1
+13193:
+  description: Nerim
+  export: AS-GITOYEN
+  import: AS-NERIM
+  limit_ipv4: 70
+  limit_ipv6: 4
+  peerings:
+  - 195.42.144.15
+  - 2001:7f8:43::1:3193:1
+13335:
+  description: Cloudflare
+  export: AS-GITOYEN
+  import: AS-CLOUDFLARE
+  limit_ipv4: 500
+  limit_ipv6: 100
+  peerings:
+  - 195.42.144.143
+  - 2001:7f8:43::1:3335:1
+14413:
+  description: Linkedin
+  export: AS-GITOYEN
+  import: AS-LINKEDIN
+  limit_ipv4: 20
+  limit_ipv6: 20
+  peerings:
+  - 195.42.144.185
+  - 2001:7f8:43::19:7612:1
+16276:
+  description: OVH
+  export: AS-GITOYEN
+  import: AS-OVH
+  limit_ipv4: 1000
+  limit_ipv6: 200
+  peerings:
+  - 195.42.144.186
+  - 2001:7f8:43::1:6276:1
+19679:
+  description: Dropbox
+  export: AS-GITOYEN
+  import: AS-DROPBOX
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 195.42.145.163
+  - 2001:7f8:43::1:9679:1
+24115:
+  description: Equinix Internet Exchange MLPE
+  export: AS-GITOYEN
+  import: AS24115
+  limit_ipv4: 150000
+  limit_ipv6: 50000
+  peerings:
+  - 195.42.144.98
+  - 2001:7f8:43:0:ffff:ffff:ffff:1
+  - 195.42.144.99
+  - 2001:7f8:43:0:ffff:ffff:ffff:2
+29608:
+  description: wan2many
+  export: AS-GITOYEN
+  import: AS-W2MY
+  limit_ipv4: 30
+  limit_ipv6: 2
+  peerings:
+  - 195.42.144.74
+  - 2001:7f8:43::2:9608:1
+43142:
+  description: Adeli
+  export: AS-GITOYEN
+  import: AS-adelinovius
+  limit_ipv4: 50
+  limit_ipv6: 20
+  peerings:
+  - 195.42.144.219
+  - 2001:7f8:43::4:3142:1
+49463:
+  description: LNC SA
+  export: AS-GITOYEN
+  import: AS49463
+  limit_ipv4: 20
+  limit_ipv6: 20
+  peerings:
+  - 195.42.145.115
+  - 2001:7f8:43::4:9463:1
+50620:
+  description: Blue Networks Technologies
+  export: AS-GITOYEN
+  import: AS-BLUENETECH
+  limit_ipv4: 5
+  limit_ipv6: 1
+  peerings:
+  - 195.42.144.121
+  - 2001:7f8:43::5:620:1
+200780:
+  description: APPLIWAVE
+  export: AS-GITOYEN
+  import: AS-APPLIWAVE
+  limit_ipv4: 6
+  limit_ipv6: 3
+  peerings:
+  - 195.42.145.110
+  - 2001:7f8:43::20:780:1
