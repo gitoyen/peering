@@ -38,7 +38,7 @@ for factory in gitoyen_peering_factory:
             name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn)).json()
             peer[name][asn] = dict()
             peer[name][asn]['description'] = name_request['data'][0]['name']
-            if name_request['data'][0]['irr_as_set'] is not None:
+            if name_request['data'][0]['irr_as_set'] is not None and len(name_request['data'][0]['irr_as_set']) > 0:
                 peer[name][asn]['import'] = name_request['data'][0]['irr_as_set']
             else:
                 peer[name][asn]['import'] = "AS" + str(asn)
