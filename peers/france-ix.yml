@@ -1,0 +1,218 @@
+714:
+  description: Apple Inc.
+  export: AS-GITOYEN
+  import: AS-APPLE
+  limit_ipv4: 10000
+  limit_ipv6: 1000
+  peerings:
+  - 37.49.237.178
+  - 2001:7f8:54::1:178
+  - 37.49.237.179
+  - 2001:7f8:54::1:179
+  - 37.49.237.176
+  - 2001:7f8:54::1:176
+  - 37.49.237.177
+  - 2001:7f8:54::1:177
+2635:
+  description: Automattic
+  export: AS-GITOYEN
+  import: AS-AUTOMATTIC
+  limit_ipv4: 150
+  limit_ipv6: 100
+  peerings:
+  - 37.49.237.157
+  - 2001:7f8:54::1:157
+3856:
+  description: Packet Clearing House
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 37.49.236.91
+  - 2001:7f8:54::91
+6507:
+  description: Riot Games
+  export: AS-GITOYEN
+  import: AS-RIOT
+  limit_ipv4: 50
+  limit_ipv6: 3
+  peerings:
+  - 37.49.236.81
+6939:
+  description: Hurricane Electric
+  export: AS-GITOYEN
+  import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
+  limit_ipv4: 165000
+  limit_ipv6: 36000
+  peerings:
+  - 37.49.236.10
+  - 2001:7f8:54::10
+8784:
+  description: Prosodie Cap Gemini
+  export: AS-GITOYEN
+  import: AS-MGN
+  limit_ipv4: 22
+  limit_ipv6: 1
+  peerings:
+  - 37.49.236.33
+  - 2001:7f8:54::33
+13193:
+  description: Nerim
+  export: AS-GITOYEN
+  import: AS-NERIM
+  limit_ipv4: 70
+  limit_ipv6: 4
+  peerings:
+  - 37.49.237.72
+  - 2001:7f8:54::1:72
+13335:
+  description: Cloudflare
+  export: AS-GITOYEN
+  import: AS-CLOUDFLARE
+  limit_ipv4: 500
+  limit_ipv6: 100
+  peerings:
+  - 37.49.237.49
+  - 2001:7f8:54::1:49
+14413:
+  description: Linkedin
+  export: AS-GITOYEN
+  import: AS-LINKEDIN
+  limit_ipv4: 20
+  limit_ipv6: 20
+  peerings:
+  - 37.49.236.161
+  - 2001:7f8:54::161
+16276:
+  description: OVH
+  export: AS-GITOYEN
+  import: AS-OVH
+  limit_ipv4: 1000
+  limit_ipv6: 200
+  peerings:
+  - 37.49.236.144
+  - 2001:7f8:54::144
+19679:
+  description: Dropbox
+  export: AS-GITOYEN
+  import: AS-DROPBOX
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 37.49.237.147
+  - 2001:7f8:54::1:147
+20940:
+  description: Akamai Technologies
+  export: AS-GITOYEN
+  import: AS-AKAMAI
+  limit_ipv4: 6500
+  limit_ipv6: 1500
+  peerings:
+  - 37.49.236.168
+  - 2001:7f8:54::168
+21502:
+  description: Numericable
+  export: AS-GITOYEN
+  import: AS-NUMERICABLE
+  limit_ipv4: 150
+  limit_ipv6: 8
+  peerings:
+  - 37.49.236.7
+  - 37.49.237.7
+29608:
+  description: wan2many
+  export: AS-GITOYEN
+  import: AS-W2MY
+  limit_ipv4: 30
+  limit_ipv6: 2
+  peerings:
+  - 37.49.236.31
+  - 2001:7f8:54::31
+36236:
+  description: NetActuate
+  export: AS-GITOYEN
+  import: AS-NETACTUATE
+  limit_ipv4: 1000
+  limit_ipv6: 250
+  peerings:
+  - 37.49.236.112
+  - 2001:7f8:54::112
+39386:
+  description: Saudi Telecom Company (STC IGW)
+  export: AS-GITOYEN
+  import: AS-IGW-SET
+  limit_ipv4: 10000
+  limit_ipv6: 500
+  peerings:
+  - 37.49.236.87
+  - 2001:7f8:54::87
+43142:
+  description: Adeli
+  export: AS-GITOYEN
+  import: AS-adelinovius
+  limit_ipv4: 50
+  limit_ipv6: 20
+  peerings:
+  - 37.49.236.111
+  - 2001:7f8:54::111
+46489:
+  description: Twitch
+  export: AS-GITOYEN
+  import: AS-TWITCH
+  limit_ipv4: 30
+  limit_ipv6: 10
+  peerings:
+  - 37.49.237.25
+  - 2001:7f8:54::1:25
+  - 37.49.237.26
+  - 2001:7f8:54::1:26
+49463:
+  description: LNC SA
+  export: AS-GITOYEN
+  import: ''
+  limit_ipv4: 20
+  limit_ipv6: 20
+  peerings:
+  - 37.49.236.145
+  - 2001:7f8:54::145
+  - 37.49.236.146
+  - 2001:7f8:54::146
+50620:
+  description: Blue Networks Technologies
+  export: AS-GITOYEN
+  import: AS-BLUENETECH
+  limit_ipv4: 5
+  limit_ipv6: 1
+  peerings:
+  - 37.49.236.74
+  - 2001:7f8:54::74
+51706:
+  description: France-IX Route Servers
+  export: AS-GITOYEN
+  import: AS51706:AS-MEMBERS
+  limit_ipv4: 150000
+  limit_ipv6: 30000
+  peerings:
+  - 37.49.236.250
+  - 2001:7f8:54::250
+  - 37.49.236.251
+  - 2001:7f8:54::251
+197422:
+  description: Association tetaneutral.net
+  export: AS-GITOYEN
+  import: AS-TETANEUTRAL-NET
+  limit_ipv4: 3
+  limit_ipv6: 6
+  peerings:
+  - 37.49.236.233
+  - 2001:7f8:54::233
+197692:
+  description: Conostix S.A.
+  export: AS-GITOYEN
+  import: CONOSTIX
+  limit_ipv4: 2
+  limit_ipv6: 0
+  peerings:
+  - 37.49.236.133
+  - 2001:7f8:54::133
