@@ -49,7 +49,7 @@ for factory in gitoyen_peering_factory:
             if routeur['ipaddr4'] is not None:
                 peer[name][asn]['peerings'].append(routeur['ipaddr4'])
                 print(
-                    "Generating configuration at " + name + "for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
+                    "Generating configuration at " + name + " for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
                         asn) + " " + peer[name][asn]['description'])
             if routeur['ipaddr6'] is not None:
                 peer[name][asn]['peerings'].append(routeur['ipaddr6'])
