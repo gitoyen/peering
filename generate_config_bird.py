@@ -9,7 +9,8 @@ import glob
 from jinja2 import Environment, FileSystemLoader
 from termcolor import colored
 
-def parse_peers(peer_file):
+
+def parse_peers(peer_file, version):
     """parse_peers: Just a simple function for peers parsing
     :peer_file: The YAML peer file to parse
     :returns: Just a return code if the file is correctly parsed or not
@@ -35,47 +36,57 @@ def parse_peers(peer_file):
         acceptable_exports = ['AS-GITOYEN', 'NOT ANY', 'ANY']
         if not peerings[asn]['export'] in acceptable_exports:
             print colored('ERROR', 'red') + ": export must be one of the following: %s" \
-                % " ".join(acceptable_exports)
+            % " ".join(acceptable_exports)
             sys.exit(2)
 
+        session = 0
         for peer in peerings[asn]['peerings']:
             try:
                 peer_ip = ipaddr.IPAddress(peer)
+                session += 1
                 if type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                     neighbor_ipv4 = peer_ip
-                    if ixp == 'sfinx':
-                        ix4_group = 'SFINX'
-                    else:
-                        ix4_group = 'AMS-IX-PEERS'
                 elif type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv6Address:
                     neighbor_ipv6 = peer_ip
-                    if ixp == 'sfinx':
-                        ix6_group = 'SFINXV6'
-                    else:
-                        ix6_group = 'AMS-IX6-PEERS'
             except ValueError:
                 print colored('ERROR', 'red') + ": %s in %s is not a valid IP" % (peer, asn)
                 sys.exit(2)
 
-        try:
-            limit_ipv4 = peerings[asn]['limit_ipv4']
-        except:
-            limit_ipv4 = False
+            try:
+                limit_ipv4 = peerings[asn]['limit_ipv4']
+            except:
+                limit_ipv4 = False
 
-        try:
-            limit_ipv6 = peerings[asn]['limit_ipv6']
-        except:
-            limit_ipv6 = False
+            try:
+                limit_ipv6 = peerings[asn]['limit_ipv6']
+            except:
+                limit_ipv6 = False
 
-        env = Environment(loader=FileSystemLoader('./'))
-        tpl = env.get_template('templates/bird_v4.j2')
+            env = Environment(loader=FileSystemLoader('./'))
 
-        print tpl.render(neighbor_as = asn, description =
-                peerings[asn]['description'], export_as = peerings[asn]['export'],
-                import_as = peerings[asn]['import'], neighbor_ipv4 =
-                neighbor_ipv4, neighbor_ipv6 = neighbor_ipv6, ix4_name =
-                ix4_group, ix6_name = ix6_group, limit_ipv4 = limit_ipv4,
-                limit_ipv6 = limit_ipv6)
+            if version == 6 and 'neighbor_ipv6' in locals():
+                #Generate IPV6
+                tpl = env.get_template('templates/bird_v6.j2')
 
-for peer_files in ('peers/franceix.yml', 'peers/amsix.yml'):
-    parse_peers(peer_files)
+                print tpl.render(neighbor_as=asn, description=
+                peerings[asn]['description'], export_as=peerings[asn]['export'],
+                           import_as=peerings[asn]['import'],
+                           neighbor_ipv6=neighbor_ipv6, ix_name=
+                           ixp, limit_ipv6=limit_ipv6, session_num=session)
+            else:
+                if 'neighbor_ipv4' in locals():
+                    #Generate IPV4
+                    tpl = env.get_template('templates/bird_v4.j2')
+
+                    print tpl.render(neighbor_as=asn, description=
+                    peerings[asn]['description'], export_as=peerings[asn]['export'],
+                               import_as=peerings[asn]['import'], neighbor_ipv4=
+                               neighbor_ipv4,ix_name=ixp,
+                               limit_ipv4=limit_ipv4, session_num=session)
+
+#Basicly check arg
+if len(sys.argv) == 2:
+    for peer_files in glob.glob('peers/*.yml'):
+        parse_peers(peer_files, int(sys.argv[1]))
+else:
+    print("Invalide argument number, You must specify IP version 4 or 6")
