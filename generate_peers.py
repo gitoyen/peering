@@ -1,35 +1,21 @@
 import requests
 import yaml
 
-GITOYEN_ASN = 20766
-PEER_ASN_LIST = [20940,
-                 26496,
-                 714,
-                 13768,
-                 8359,
-                 2119,
-                 36236,
-                 36692,
-                 14340,
-                 2635,
-                 19679,
-                 6507,
-                 3265,
-                 14413,
-                 36459,
-                 25459,
-                 39386,
-                 29686,
-                 55818,
-                 3262,
-                 42459,
-                 7500,
-                 200020
-                 ]
+GITOYEN_ASN = 0
+PEER_ASN_LIST = []
 
 gitoyen_peering_factory = []
 ses = requests.session()
 peer = dict()
+
+# Load config
+try:
+    config = yaml.load(open('config/settings.yml'))
+    GITOYEN_ASN = config['ASN']
+    PEER_ASN_LIST = config['PEERS']
+except:
+    print("Failed to load config exiting..")
+    exit(1)
 
 # List Gitoyen Factory with IPv6 avaidable
 factory_request = ses.get("https://peeringdb.com//api/netixlan?asn=" + str(GITOYEN_ASN))
@@ -45,23 +31,36 @@ for factory in gitoyen_peering_factory:
         info_request = ses.get(
             "https://peeringdb.com/api/netixlan?asn=" + str(asn) + "&ix_id=" + str(factory['ix_id']))
         result = info_request.json()['data']
-        name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn))
+        name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn)).json()
         peer[name][asn] = dict()
-        peer[name][asn]['description'] = name_request.json()['data'][0]['name']
-        peer[name][asn]['import'] = "AS" + str(asn)
-        peer[name][asn]['export'] =  "AS-GITOYEN"
+        peer[name][asn]['description'] = name_request['data'][0]['name']
+        if name_request['data'][0]['irr_as_set'] is not None:
+            peer[name][asn]['import'] = name_request['data'][0]['irr_as_set']
+        else:
+            peer[name][asn]['import'] = "AS" + str(asn)
+        peer[name][asn]['export'] = "AS-GITOYEN"
         peer[name][asn]['peerings'] = []
+        if name_request['data'][0]['info_prefixes4'] is not None:
+            peer[name][asn]['limit_ipv4'] = int(name_request['data'][0]['info_prefixes4'])
+        if name_request['data'][0]['info_prefixes6'] is not None:
+            peer[name][asn]['limit_ipv6'] = int(name_request['data'][0]['info_prefixes6'])
         delete = True
         for routeur in result:
             if routeur['ipaddr4'] is not None:
                 peer[name][asn]['peerings'].append(routeur['ipaddr4'])
+                print(
+                    "Generating configuration at " + name + "for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
+                        asn) + " " + peer[name][asn]['description'])
             if routeur['ipaddr6'] is not None:
                 peer[name][asn]['peerings'].append(routeur['ipaddr6'])
+                print(
+                    "Generating configuration at " + name + " for the router " + str(routeur['ipaddr6']) + " of the AS " + str(
+                        asn) + " " + peer[name][asn]['description'])
             delete = False
         if delete:
             peer[name].pop(asn, None)
 
 for gix in peer:
-    with open("peers/"+gix+'.yml', 'w') as outfile:
+    with open("peers/" + gix + '.yml', 'w') as outfile:
         yaml.dump(peer[gix], outfile, default_flow_style=False)
         outfile.close()
