@@ -31,34 +31,38 @@ for factory in gitoyen_peering_factory:
         info_request = ses.get(
             "https://peeringdb.com/api/netixlan?asn=" + str(asn) + "&ix_id=" + str(factory['ix_id']))
         result = info_request.json()['data']
-        name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn)).json()
-        peer[name][asn] = dict()
-        peer[name][asn]['description'] = name_request['data'][0]['name']
-        if name_request['data'][0]['irr_as_set'] is not None:
-            peer[name][asn]['import'] = name_request['data'][0]['irr_as_set']
-        else:
-            peer[name][asn]['import'] = "AS" + str(asn)
-        peer[name][asn]['export'] = "AS-GITOYEN"
-        peer[name][asn]['peerings'] = []
-        if name_request['data'][0]['info_prefixes4'] is not None:
-            peer[name][asn]['limit_ipv4'] = int(name_request['data'][0]['info_prefixes4'])
-        if name_request['data'][0]['info_prefixes6'] is not None:
-            peer[name][asn]['limit_ipv6'] = int(name_request['data'][0]['info_prefixes6'])
-        delete = True
-        for routeur in result:
-            if routeur['ipaddr4'] is not None:
-                peer[name][asn]['peerings'].append(routeur['ipaddr4'])
-                print(
-                    "Generating configuration at " + name + " for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
-                        asn) + " " + peer[name][asn]['description'])
-            if routeur['ipaddr6'] is not None:
-                peer[name][asn]['peerings'].append(routeur['ipaddr6'])
-                print(
-                    "Generating configuration at " + name + " for the router " + str(routeur['ipaddr6']) + " of the AS " + str(
-                        asn) + " " + peer[name][asn]['description'])
-            delete = False
-        if delete:
-            peer[name].pop(asn, None)
+        if len(result) > 0:
+            if result[0]['is_rs_peer']:
+                print('AS'+str(asn)+" is a RS peer, skipping")
+                continue
+            name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn)).json()
+            peer[name][asn] = dict()
+            peer[name][asn]['description'] = name_request['data'][0]['name']
+            if name_request['data'][0]['irr_as_set'] is not None:
+                peer[name][asn]['import'] = name_request['data'][0]['irr_as_set']
+            else:
+                peer[name][asn]['import'] = "AS" + str(asn)
+            peer[name][asn]['export'] = "AS-GITOYEN"
+            peer[name][asn]['peerings'] = []
+            if name_request['data'][0]['info_prefixes4'] is not None:
+                peer[name][asn]['limit_ipv4'] = int(name_request['data'][0]['info_prefixes4'])
+            if name_request['data'][0]['info_prefixes6'] is not None:
+                peer[name][asn]['limit_ipv6'] = int(name_request['data'][0]['info_prefixes6'])
+            delete = True
+            for routeur in result:
+                if routeur['ipaddr4'] is not None:
+                    peer[name][asn]['peerings'].append(routeur['ipaddr4'])
+                    print(
+                        "Generating configuration at " + name + " for the router " + str(routeur['ipaddr4']) + " of the AS " + str(
+                            asn) + " " + peer[name][asn]['description'])
+                if routeur['ipaddr6'] is not None:
+                    peer[name][asn]['peerings'].append(routeur['ipaddr6'])
+                    print(
+                        "Generating configuration at " + name + " for the router " + str(routeur['ipaddr6']) + " of the AS " + str(
+                            asn) + " " + peer[name][asn]['description'])
+                delete = False
+            if delete:
+                peer[name].pop(asn, None)
 
 for gix in peer:
     with open("peers/" + gix + '.yml', 'w') as outfile:
