@@ -73,7 +73,7 @@ def parse_peers(peer_file, version):
                 peerings[asn]['description'], export_as=peerings[asn]['export'],
                            import_as=peerings[asn]['import'],
                            neighbor_ipv6=neighbor_ipv6, ix_name=
-                           ixp, limit_ipv6=limit_ipv6, session_num=session).encode('utf-8').strip()
+                           ixp , ix_name_strip= ixp.replace('-',''),limit_ipv6=limit_ipv6, session_num=session).encode('utf-8').strip()
             else:
                 if 'neighbor_ipv4' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                     #Generate IPV4
@@ -82,7 +82,7 @@ def parse_peers(peer_file, version):
                     print tpl.render(neighbor_as=asn, description=
                     peerings[asn]['description'], export_as=peerings[asn]['export'],
                                import_as=peerings[asn]['import'], neighbor_ipv4=
-                               neighbor_ipv4,ix_name=ixp,
+                               neighbor_ipv4,ix_name=ixp, ix_name_strip= ixp.replace('-',''),
                                limit_ipv4=limit_ipv4, session_num=session).encode('utf-8').strip()
 
 
