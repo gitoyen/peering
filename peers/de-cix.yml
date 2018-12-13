@@ -119,8 +119,8 @@
   description: Nerim
   export: AS-GITOYEN
   import: AS-NERIM
-  limit_ipv4: 70
-  limit_ipv6: 4
+  limit_ipv4: 175
+  limit_ipv6: 100
   peerings:
   - 80.81.193.39
   - 2001:7f8::3389:0:1
