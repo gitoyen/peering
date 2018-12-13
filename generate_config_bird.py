@@ -65,7 +65,7 @@ def parse_peers(peer_file, version):
 
             env = Environment(loader=FileSystemLoader('./'))
 
-            if version == 6 and 'neighbor_ipv6' in locals():
+            if version == 6 and 'neighbor_ipv6' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv6Address:
                 #Generate IPV6
                 tpl = env.get_template('templates/bird_v6.j2')
 
@@ -74,10 +74,8 @@ def parse_peers(peer_file, version):
                            import_as=peerings[asn]['import'],
                            neighbor_ipv6=neighbor_ipv6, ix_name=
                            ixp, limit_ipv6=limit_ipv6, session_num=session)
-                if session == 1:
-                    break
             else:
-                if 'neighbor_ipv4' in locals():
+                if 'neighbor_ipv4' in locals() and type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
                     #Generate IPV4
                     tpl = env.get_template('templates/bird_v4.j2')
 
@@ -86,8 +84,7 @@ def parse_peers(peer_file, version):
                                import_as=peerings[asn]['import'], neighbor_ipv4=
                                neighbor_ipv4,ix_name=ixp,
                                limit_ipv4=limit_ipv4, session_num=session)
-                    if session == 1:
-                        break
+
 
 #Basicly check arg
 if len(sys.argv) == 2:
