@@ -43,11 +43,12 @@ def parse_peers(peer_file, version):
         for peer in peerings[asn]['peerings']:
             try:
                 peer_ip = ipaddr.IPAddress(peer)
-                session += 1
-                if type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address:
+                if type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv4Address and version == 4:
                     neighbor_ipv4 = peer_ip
-                elif type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv6Address:
+                    session += 1
+                elif type(ipaddr.IPAddress(peer_ip)) is ipaddr.IPv6Address and version == 6:
                     neighbor_ipv6 = peer_ip
+                    session += 1
             except ValueError:
                 print colored('ERROR', 'red') + ": %s in %s is not a valid IP" % (peer, asn)
                 sys.exit(2)
@@ -73,6 +74,8 @@ def parse_peers(peer_file, version):
                            import_as=peerings[asn]['import'],
                            neighbor_ipv6=neighbor_ipv6, ix_name=
                            ixp, limit_ipv6=limit_ipv6, session_num=session)
+                if session == 1:
+                    break
             else:
                 if 'neighbor_ipv4' in locals():
                     #Generate IPV4
@@ -83,6 +86,8 @@ def parse_peers(peer_file, version):
                                import_as=peerings[asn]['import'], neighbor_ipv4=
                                neighbor_ipv4,ix_name=ixp,
                                limit_ipv4=limit_ipv4, session_num=session)
+                    if session == 1:
+                        break
 
 #Basicly check arg
 if len(sys.argv) == 2:
