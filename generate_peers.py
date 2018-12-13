@@ -32,9 +32,6 @@ for factory in gitoyen_peering_factory:
             "https://peeringdb.com/api/netixlan?asn=" + str(asn) + "&ix_id=" + str(factory['ix_id']))
         result = info_request.json()['data']
         if len(result) > 0:
-            if result[0]['is_rs_peer']:
-                print('AS'+str(asn)+" is a RS peer, skipping")
-                continue
             name_request = ses.get('https://peeringdb.com/api/net?asn=' + str(asn)).json()
             peer[name][asn] = dict()
             peer[name][asn]['description'] = name_request['data'][0]['name']
