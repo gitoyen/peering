@@ -1,4 +1,4 @@
-protocol bgp {{ ix_name }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ session_num }}{%- endif %} from tpl_{{ ix_name }}_peers {
+protocol bgp {{ ix_name_strip }}_{{ neighbor_as }}{%- if session_num > 1 %}_{{ session_num }}{%- endif %} from tpl_{{ ix_name_strip }}_peers {
     neighbor {{ neighbor_ipv4 }} as {{ neighbor_as }};
     description "{{ ix_name }} / {{ description }}";
     {%- if limit_ipv4 %}

@@ -1,3 +1,12 @@
+42:
+  description: Packet Clearing House AS42
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 600
+  limit_ipv6: 600
+  peerings:
+  - 37.49.236.92
+  - 2001:7f8:54::92
 714:
   description: Apple Inc.
   export: AS-GITOYEN
@@ -13,6 +22,24 @@
   - 2001:7f8:54::1:176
   - 37.49.237.177
   - 2001:7f8:54::1:177
+2484:
+  description: FR-NIC-DNS-ANYCAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 37.49.236.20
+  - 2001:7f8:54::20
+2486:
+  description: FR-NIC-DNS-UNICAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 4
+  limit_ipv6: 6
+  peerings:
+  - 37.49.236.21
+  - 2001:7f8:54::21
 2635:
   description: Automattic
   export: AS-GITOYEN
@@ -43,11 +70,20 @@
   description: Hurricane Electric
   export: AS-GITOYEN
   import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
-  limit_ipv4: 165000
+  limit_ipv4: 169000
   limit_ipv6: 36000
   peerings:
   - 37.49.236.10
   - 2001:7f8:54::10
+7500:
+  description: M-ROOT DNS Server
+  export: AS-GITOYEN
+  import: AS-M-ROOT
+  limit_ipv4: 6
+  limit_ipv6: 2
+  peerings:
+  - 37.49.237.106
+  - 2001:7f8:54::1:106
 8784:
   description: Prosodie Cap Gemini
   export: AS-GITOYEN
@@ -57,6 +93,14 @@
   peerings:
   - 37.49.236.33
   - 2001:7f8:54::33
+9036:
+  description: Neuronnexion
+  export: AS-GITOYEN
+  import: AS-NEURONNEXION
+  limit_ipv4: 30
+  limit_ipv6: 1
+  peerings:
+  - 37.49.236.104
 13193:
   description: Nerim
   export: AS-GITOYEN
@@ -75,6 +119,15 @@
   peerings:
   - 37.49.237.49
   - 2001:7f8:54::1:49
+14340:
+  description: Salesforce.com
+  export: AS-GITOYEN
+  import: AS-SALESFORCE
+  limit_ipv4: 1000
+  limit_ipv6: 100
+  peerings:
+  - 37.49.237.154
+  - 2001:7f8:54::1:154
 14413:
   description: Linkedin
   export: AS-GITOYEN
@@ -93,6 +146,17 @@
   peerings:
   - 37.49.236.144
   - 2001:7f8:54::144
+16509:
+  description: Amazon.com
+  export: AS-GITOYEN
+  import: AS-AMAZON
+  limit_ipv4: 4000
+  limit_ipv6: 1500
+  peerings:
+  - 37.49.236.118
+  - 2001:7f8:54::118
+  - 37.49.237.166
+  - 2001:7f8:54::1:166
 19679:
   description: Dropbox
   export: AS-GITOYEN
@@ -102,6 +166,15 @@
   peerings:
   - 37.49.237.147
   - 2001:7f8:54::1:147
+20562:
+  description: Open Peering
+  export: AS-GITOYEN
+  import: AS-OPENPEERING
+  limit_ipv4: 5000
+  limit_ipv6: 500
+  peerings:
+  - 37.49.236.68
+  - 2001:7f8:54::68
 20940:
   description: Akamai Technologies
   export: AS-GITOYEN
@@ -120,6 +193,15 @@
   peerings:
   - 37.49.236.7
   - 37.49.237.7
+29467:
+  description: LuxNetwork S.A.
+  export: AS-GITOYEN
+  import: RIPE::AS-LUXNETWORK
+  limit_ipv4: 500
+  limit_ipv6: 150
+  peerings:
+  - 37.49.236.227
+  - 2001:7f8:54::227
 29608:
   description: wan2many
   export: AS-GITOYEN
@@ -129,6 +211,15 @@
   peerings:
   - 37.49.236.31
   - 2001:7f8:54::31
+34019:
+  description: Hivane
+  export: AS-GITOYEN
+  import: AS-HIVANE
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 37.49.236.71
+  - 2001:7f8:54::71
 36236:
   description: NetActuate
   export: AS-GITOYEN
@@ -138,6 +229,15 @@
   peerings:
   - 37.49.236.112
   - 2001:7f8:54::112
+36692:
+  description: OpenDNS, Inc.
+  export: AS-GITOYEN
+  import: AS-OPENDNS
+  limit_ipv4: 70
+  limit_ipv6: 20
+  peerings:
+  - 37.49.236.210
+  - 2001:7f8:54::210
 39386:
   description: Saudi Telecom Company (STC IGW)
   export: AS-GITOYEN
@@ -147,6 +247,24 @@
   peerings:
   - 37.49.236.87
   - 2001:7f8:54::87
+39405:
+  description: FullSave
+  export: AS-GITOYEN
+  import: RIPE::AS-FULLSAVE
+  limit_ipv4: 50
+  limit_ipv6: 15
+  peerings:
+  - 37.49.236.220
+  - 2001:7f8:54::220
+42473:
+  description: Anexia
+  export: AS-GITOYEN
+  import: AS-ANEXIA
+  limit_ipv4: 1000
+  limit_ipv6: 500
+  peerings:
+  - 37.49.236.85
+  - 2001:7f8:54::85
 43142:
   description: Adeli
   export: AS-GITOYEN
@@ -216,3 +334,12 @@
   peerings:
   - 37.49.236.133
   - 2001:7f8:54::133
+200780:
+  description: APPLIWAVE
+  export: AS-GITOYEN
+  import: AS-APPLIWAVE
+  limit_ipv4: 20
+  limit_ipv6: 3
+  peerings:
+  - 37.49.237.100
+  - 2001:7f8:54::1:100

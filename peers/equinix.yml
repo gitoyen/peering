@@ -1,3 +1,12 @@
+42:
+  description: Packet Clearing House AS42
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 600
+  limit_ipv6: 600
+  peerings:
+  - 195.42.144.17
+  - 2001:7f8:43::42:1
 714:
   description: Apple Inc.
   export: AS-GITOYEN
@@ -9,6 +18,15 @@
   - 2001:7f8:43::714:2
   - 195.42.145.189
   - 2001:7f8:43::714:1
+2484:
+  description: FR-NIC-DNS-ANYCAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 195.42.144.153
+  - 2001:7f8:43::2486:1
 3856:
   description: Packet Clearing House
   export: AS-GITOYEN
@@ -39,7 +57,7 @@
   description: Hurricane Electric
   export: AS-GITOYEN
   import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
-  limit_ipv4: 165000
+  limit_ipv4: 169000
   limit_ipv6: 36000
   peerings:
   - 195.42.144.104
@@ -62,6 +80,14 @@
   peerings:
   - 195.42.144.81
   - 2001:7f8:43::8784:1
+9036:
+  description: Neuronnexion
+  export: AS-GITOYEN
+  import: AS-NEURONNEXION
+  limit_ipv4: 30
+  limit_ipv6: 1
+  peerings:
+  - 195.42.144.97
 12041:
   description: Afilias
   export: AS-GITOYEN
@@ -89,6 +115,15 @@
   peerings:
   - 195.42.144.143
   - 2001:7f8:43::1:3335:1
+14340:
+  description: Salesforce.com
+  export: AS-GITOYEN
+  import: AS-SALESFORCE
+  limit_ipv4: 1000
+  limit_ipv6: 100
+  peerings:
+  - 195.42.145.172
+  - 2001:7f8:43::1:4340:1
 14413:
   description: Linkedin
   export: AS-GITOYEN
@@ -98,6 +133,15 @@
   peerings:
   - 195.42.144.185
   - 2001:7f8:43::19:7612:1
+15133:
+  description: Verizon Digital Media Services (EdgeCast Networks)
+  export: AS-GITOYEN
+  import: AS-EDGECAST
+  limit_ipv4: 5000
+  limit_ipv6: 5000
+  peerings:
+  - 195.42.144.65
+  - 2001:7f8:43::1:5133:1
 16276:
   description: OVH
   export: AS-GITOYEN
@@ -107,6 +151,15 @@
   peerings:
   - 195.42.144.186
   - 2001:7f8:43::1:6276:1
+16509:
+  description: Amazon.com
+  export: AS-GITOYEN
+  import: AS-AMAZON
+  limit_ipv4: 4000
+  limit_ipv6: 1500
+  peerings:
+  - 195.42.144.162
+  - 2001:7f8:43::1:6509:1
 19679:
   description: Dropbox
   export: AS-GITOYEN
@@ -127,6 +180,26 @@
   - 2001:7f8:43:0:ffff:ffff:ffff:1
   - 195.42.144.99
   - 2001:7f8:43:0:ffff:ffff:ffff:2
+24990:
+  description: Equinix Connect - PA Metro
+  export: AS-GITOYEN
+  import: AS-EQUINIX-EU
+  limit_ipv4: 1000
+  limit_ipv6: 100
+  peerings:
+  - 195.42.144.2
+  - 2001:7f8:43::2:1371:1
+  - 195.42.145.2
+  - 2001:7f8:43::2:1371:2
+29467:
+  description: LuxNetwork S.A.
+  export: AS-GITOYEN
+  import: RIPE::AS-LUXNETWORK
+  limit_ipv4: 500
+  limit_ipv6: 150
+  peerings:
+  - 195.42.145.24
+  - 2001:7f8:43::2:9467:1
 29608:
   description: wan2many
   export: AS-GITOYEN
@@ -136,6 +209,42 @@
   peerings:
   - 195.42.144.74
   - 2001:7f8:43::2:9608:1
+34019:
+  description: Hivane
+  export: AS-GITOYEN
+  import: AS-HIVANE
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 195.42.144.47
+  - 2001:7f8:43::3:4019:1
+36236:
+  description: NetActuate
+  export: AS-GITOYEN
+  import: AS-NETACTUATE
+  limit_ipv4: 1000
+  limit_ipv6: 250
+  peerings:
+  - 195.42.145.214
+  - 2001:7f8:43::3:6236:1
+39405:
+  description: FullSave
+  export: AS-GITOYEN
+  import: RIPE::AS-FULLSAVE
+  limit_ipv4: 50
+  limit_ipv6: 15
+  peerings:
+  - 195.42.145.188
+  - 2001:7f8:43::3:9405:1
+42473:
+  description: Anexia
+  export: AS-GITOYEN
+  import: AS-ANEXIA
+  limit_ipv4: 1000
+  limit_ipv6: 500
+  peerings:
+  - 195.42.144.118
+  - 2001:7f8:43::4:2473:1
 43142:
   description: Adeli
   export: AS-GITOYEN
@@ -163,6 +272,15 @@
   peerings:
   - 195.42.144.121
   - 2001:7f8:43::5:620:1
+198507:
+  description: Quantic Telecom
+  export: AS-GITOYEN
+  import: AS-QUANTIC
+  limit_ipv4: 50
+  limit_ipv6: 50
+  peerings:
+  - 195.42.144.192
+  - 2001:7f8:43::19:8507:1
 200780:
   description: APPLIWAVE
   export: AS-GITOYEN

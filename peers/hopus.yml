@@ -1,1 +1,29 @@
-{}
+34019:
+  description: Hivane
+  export: AS-GITOYEN
+  import: AS-HIVANE
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 37.77.34.49
+  - 2a02:e5c:1:18::2
+  - 37.77.38.25
+  - 2a02:e5c:4:12::2
+198507:
+  description: Quantic Telecom
+  export: AS-GITOYEN
+  import: AS-QUANTIC
+  limit_ipv4: 50
+  limit_ipv6: 50
+  peerings:
+  - 37.77.34.65
+  - 2a02:e5c:1:26::2
+200780:
+  description: APPLIWAVE
+  export: AS-GITOYEN
+  import: AS-APPLIWAVE
+  limit_ipv4: 20
+  limit_ipv6: 3
+  peerings:
+  - 37.77.36.23
+  - 2a02:e5c:2:11::2

@@ -1,3 +1,12 @@
+42:
+  description: Packet Clearing House AS42
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 600
+  limit_ipv6: 600
+  peerings:
+  - 80.81.194.42
+  - 2001:7f8::2a:0:1
 714:
   description: Apple Inc.
   export: AS-GITOYEN
@@ -22,6 +31,15 @@
   peerings:
   - 80.81.194.121
   - 2001:7f8::847:0:1
+2484:
+  description: FR-NIC-DNS-ANYCAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 80.81.194.155
+  - 2001:7f8::9b4:0:1
 2635:
   description: Automattic
   export: AS-GITOYEN
@@ -31,6 +49,15 @@
   peerings:
   - 80.81.193.69
   - 2001:7f8::a4b:0:1
+3856:
+  description: Packet Clearing House
+  export: AS-GITOYEN
+  import: AS-PCH
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 80.81.195.42
+  - 2001:7f8::f10:0:1
 4651:
   description: CAT Telecom AS4651
   export: AS-GITOYEN
@@ -40,6 +67,15 @@
   peerings:
   - 80.81.193.238
   - 2001:7f8::122b:0:1
+6507:
+  description: Riot Games
+  export: AS-GITOYEN
+  import: AS-RIOT
+  limit_ipv4: 50
+  limit_ipv6: 3
+  peerings:
+  - 80.81.193.162
+  - 80.81.193.163
 6695:
   description: DE-CIX Frankfurt Route Servers
   export: AS-GITOYEN
@@ -81,7 +117,7 @@
   description: Hurricane Electric
   export: AS-GITOYEN
   import: RADB::AS-HURRICANE RADB::AS-HURRICANEv6
-  limit_ipv4: 165000
+  limit_ipv4: 169000
   limit_ipv6: 36000
   peerings:
   - 80.81.192.172
@@ -106,6 +142,14 @@
   peerings:
   - 80.81.192.6
   - 2001:7f8::20ad:0:1
+9036:
+  description: Neuronnexion
+  export: AS-GITOYEN
+  import: AS-NEURONNEXION
+  limit_ipv4: 30
+  limit_ipv6: 1
+  peerings:
+  - 80.81.193.152
 12041:
   description: Afilias
   export: AS-GITOYEN
@@ -142,6 +186,15 @@
   peerings:
   - 80.81.193.151
   - 2001:7f8::35c8:0:1
+14340:
+  description: Salesforce.com
+  export: AS-GITOYEN
+  import: AS-SALESFORCE
+  limit_ipv4: 1000
+  limit_ipv6: 100
+  peerings:
+  - 80.81.195.43
+  - 2001:7f8::3804:0:1
 14413:
   description: Linkedin
   export: AS-GITOYEN
@@ -151,6 +204,17 @@
   peerings:
   - 80.81.194.219
   - 2001:7f8::3:3ec:0:1
+15133:
+  description: Verizon Digital Media Services (EdgeCast Networks)
+  export: AS-GITOYEN
+  import: AS-EDGECAST
+  limit_ipv4: 5000
+  limit_ipv6: 5000
+  peerings:
+  - 80.81.194.37
+  - 2001:7f8::3b1d:0:1
+  - 80.81.195.37
+  - 2001:7f8::3b1d:0:2
 16276:
   description: OVH
   export: AS-GITOYEN
@@ -162,6 +226,17 @@
   - 2001:7f8::3f94:0:1
   - 80.81.193.209
   - 2001:7f8::3f94:0:2
+16509:
+  description: Amazon.com
+  export: AS-GITOYEN
+  import: AS-AMAZON
+  limit_ipv4: 4000
+  limit_ipv6: 1500
+  peerings:
+  - 80.81.194.152
+  - 2001:7f8::407d:0:1
+  - 80.81.195.152
+  - 2001:7f8::407d:0:2
 19679:
   description: Dropbox
   export: AS-GITOYEN
@@ -171,6 +246,15 @@
   peerings:
   - 80.81.194.138
   - 2001:7f8::4cdf:0:1
+20562:
+  description: Open Peering
+  export: AS-GITOYEN
+  import: AS-OPENPEERING
+  limit_ipv4: 5000
+  limit_ipv6: 500
+  peerings:
+  - 80.81.192.96
+  - 2001:7f8::5052:0:1
 20940:
   description: Akamai Technologies
   export: AS-GITOYEN
@@ -184,6 +268,15 @@
   - 2001:7f8::51cc:0:168
   - 80.81.195.168
   - 2001:7f8::51cc:1:168
+29467:
+  description: LuxNetwork S.A.
+  export: AS-GITOYEN
+  import: RIPE::AS-LUXNETWORK
+  limit_ipv4: 500
+  limit_ipv6: 150
+  peerings:
+  - 80.81.193.52
+  - 2001:7f8::731b:0:1
 29686:
   description: Probe Networks
   export: AS-GITOYEN
@@ -193,6 +286,15 @@
   peerings:
   - 80.81.192.133
   - 2001:7f8::73f6:0:1
+34019:
+  description: Hivane
+  export: AS-GITOYEN
+  import: AS-HIVANE
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 80.81.193.145
+  - 2001:7f8::84e3:0:1
 36236:
   description: NetActuate
   export: AS-GITOYEN
@@ -222,6 +324,15 @@
   - 2001:7f8::99da:0:1
   - 80.81.195.159
   - 2001:7f8::99da:0:2
+41692:
+  description: OpenCarrier eG
+  export: AS-GITOYEN
+  import: RIPE::AS-OPENCARRIER RIPE::AS-OPENCARRIER6
+  limit_ipv4: 1000
+  limit_ipv6: 100
+  peerings:
+  - 80.81.192.24
+  - 2001:7f8::a2dc:0:1
 42459:
   description: Fiber Optics Bulgaria
   export: AS-GITOYEN
@@ -251,3 +362,12 @@
   peerings:
   - 80.81.195.48
   - 2001:7f8::da0a:0:1
+205388:
+  description: Serverdiscounter
+  export: AS-GITOYEN
+  import: AS205388
+  limit_ipv4: 5
+  limit_ipv6: 5
+  peerings:
+  - 80.81.195.89
+  - 2001:7f8::3:224c:0:1

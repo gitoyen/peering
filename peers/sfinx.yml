@@ -9,6 +9,24 @@
   - 2001:7f8:4e:2::100
   - 194.68.129.101
   - 2001:7f8:4e:2::101
+2484:
+  description: FR-NIC-DNS-ANYCAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 1
+  limit_ipv6: 1
+  peerings:
+  - 194.68.129.193
+  - 2001:7f8:4e:2::193
+2486:
+  description: FR-NIC-DNS-UNICAST (AFNIC / NIC-France)
+  export: AS-GITOYEN
+  import: AS-AFNIC
+  limit_ipv4: 4
+  limit_ipv6: 6
+  peerings:
+  - 194.68.129.238
+  - 2001:7f8:4e:2::238
 6730:
   description: Sunrise Communications AG
   export: AS-GITOYEN
@@ -36,6 +54,14 @@
   peerings:
   - 194.68.129.196
   - 2001:7f8:4e:2::196
+9036:
+  description: Neuronnexion
+  export: AS-GITOYEN
+  import: AS-NEURONNEXION
+  limit_ipv4: 30
+  limit_ipv6: 1
+  peerings:
+  - 194.68.129.111
 13193:
   description: Nerim
   export: AS-GITOYEN
@@ -63,6 +89,15 @@
   peerings:
   - 194.68.129.121
   - 2001:7f8:4e:2::121
+34019:
+  description: Hivane
+  export: AS-GITOYEN
+  import: AS-HIVANE
+  limit_ipv4: 100
+  limit_ipv6: 50
+  peerings:
+  - 194.68.129.123
+  - 2001:7f8:4e:2::123
 50620:
   description: Blue Networks Technologies
   export: AS-GITOYEN
