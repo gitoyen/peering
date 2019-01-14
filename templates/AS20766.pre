@@ -11,19 +11,19 @@ remarks:    PeeringDB: http://as20766.peeringdb.com/
 remarks:
 remarks:    ======== Transit ========
 remarks:    # Ielo
-import:     from AS29075 action pref=90; accept AS-IELO
-export:     to AS29075 announce ANY
+import:     from AS29075 action pref=90; accept ANY
+export:     to AS29075 announce AS-GITOYEN
 remarks:    -
 remarks:    # TATA Communications
-import:     from AS6453 action pref=90; accept AS6453
-export:     to AS6453 announce ANY
+import:     from AS6453 action pref=90; accept ANY
+export:     to AS6453 announce AS-GITOYEN
 remarks:    -
 remarks:    # Absolight
-import:     from AS29608 action pref=90; accept AS-ABSOLIGHT
-export:     to AS29608 announce ANY
+import:     from AS29608 action pref=90; accept ANY
+export:     to AS29608 announce AS-GITOYEN
 remarks:    -
 remarks:    # Hopus
-import:     from AS44530 action pref=100; accept AS-HOPUS
+import:     from AS44530 action pref=100; accept ANY
 export:     to AS44530 announce AS-GITOYEN
 remarks:
 remarks:    ======== Peering ========
