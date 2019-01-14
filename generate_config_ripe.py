@@ -45,7 +45,7 @@ def parse_peers(peer_file):
 
         print tpl.render(neighbor_as = asn, description =
                 peerings[asn]['description'], export_as = peerings[asn]['export'],
-                import_as = peerings[asn]['import'])
+                import_as = peerings[asn]['import']).encode('utf-8').strip()
 
 sys.stdout.write(open('templates/AS20766.pre', 'r').read())
 
