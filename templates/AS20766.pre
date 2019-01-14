@@ -25,5 +25,9 @@ remarks:    -
 remarks:    # Hopus
 import:     from AS44530 action pref=100; accept ANY
 export:     to AS44530 announce AS-GITOYEN
+remarks:    -
+remarks:    # MilkyWan
+import:     from AS57199 action pref=100; accept ANY
+export:     to AS57199 announce AS-GITOYEN
 remarks:
 remarks:    ======== Peering ========
