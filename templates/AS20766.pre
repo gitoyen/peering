@@ -9,7 +9,7 @@ remarks:    Looking Glass: http://lg.gitoyen.net/
 remarks:    Open peering policy: just ask peering@gitoyen.net
 remarks:    PeeringDB: http://as20766.peeringdb.com/
 remarks:
-remarks:    ======== Transit ========
+remarks:    ======== BGP Upstream ========
 remarks:    # Ielo
 import:     from AS29075 action pref=90; accept ANY
 export:     to AS29075 announce AS-GITOYEN
@@ -26,7 +26,7 @@ remarks:    # Hopus
 import:     from AS44530 action pref=100; accept ANY
 export:     to AS44530 announce AS-GITOYEN
 remarks:    -
-remarks:    # MilkyWan
+remarks:    # MilkyWan (partiel)
 import:     from AS57199 action pref=100; accept ANY
 export:     to AS57199 announce AS-GITOYEN
 remarks:
