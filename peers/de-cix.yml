@@ -107,12 +107,8 @@
   peerings:
   - 80.81.192.89
   - 2001:7f8::1a95:0:1
-  - 80.81.192.232
-  - 2001:7f8::1a95:0:5
   - 80.81.193.89
   - 2001:7f8::1a95:0:2
-  - 80.81.193.232
-  - 2001:7f8::1a95:0:6
 6939:
   description: Hurricane Electric
   export: AS-GITOYEN
@@ -146,7 +142,7 @@
   description: Neuronnexion
   export: AS-GITOYEN
   import: AS-NEURONNEXION
-  limit_ipv4: 30
+  limit_ipv4: 40
   limit_ipv6: 1
   peerings:
   - 80.81.193.152

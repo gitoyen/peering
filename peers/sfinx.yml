@@ -58,7 +58,7 @@
   description: Neuronnexion
   export: AS-GITOYEN
   import: AS-NEURONNEXION
-  limit_ipv4: 30
+  limit_ipv4: 40
   limit_ipv6: 1
   peerings:
   - 194.68.129.111
@@ -98,6 +98,15 @@
   peerings:
   - 194.68.129.123
   - 2001:7f8:4e:2::123
+42929:
+  description: Artefact - Artewan
+  export: AS-GITOYEN
+  import: AS-ARTEWAN
+  limit_ipv4: 16
+  limit_ipv6: 16
+  peerings:
+  - 194.68.129.195
+  - 2001:7f8:4e:2::195
 50620:
   description: Blue Networks Technologies
   export: AS-GITOYEN

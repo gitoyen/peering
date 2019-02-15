@@ -156,7 +156,7 @@
   description: Neuronnexion
   export: AS-GITOYEN
   import: AS-NEURONNEXION
-  limit_ipv4: 30
+  limit_ipv4: 40
   limit_ipv6: 1
   peerings:
   - 80.249.210.36
@@ -389,15 +389,6 @@
   peerings:
   - 80.249.209.221
   - 2001:7f8:1::a504:1692:1
-42473:
-  description: Anexia
-  export: AS-GITOYEN
-  import: AS-ANEXIA
-  limit_ipv4: 1000
-  limit_ipv6: 500
-  peerings:
-  - 80.249.213.102
-  - 2001:7f8:1::a504:2473:2
 43142:
   description: Adeli
   export: AS-GITOYEN
@@ -445,6 +436,15 @@
   peerings:
   - 80.249.212.208
   - 2001:7f8:1::a505:5818:1
+64050:
+  description: BGP Consultancy
+  export: AS-GITOYEN
+  import: AS64050
+  limit_ipv4: 10000
+  limit_ipv6: 100
+  peerings:
+  - 80.249.213.235
+  - 2001:7f8:1::a506:4050:1
 197692:
   description: Conostix S.A.
   export: AS-GITOYEN
@@ -458,8 +458,8 @@
   description: Stichting Nationale Beheersorganisatie Internet Providers (NBIP)
   export: AS-GITOYEN
   import: AS-NBIP, AS-NBIP6
-  limit_ipv4: 20
-  limit_ipv6: 1
+  limit_ipv4: 100
+  limit_ipv6: 20
   peerings:
   - 80.249.211.82
   - 2001:7f8:1:0:a500:20:20:1
